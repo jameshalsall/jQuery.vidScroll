@@ -42,10 +42,10 @@
 
                 if ((current < lastPos) && (lastPos + current >= (lastPos + step))) {
                     lastPos = current;
-                    video.currentTime = video.currentTime - step;
+                    video.currentTime = video.currentTime - stepSize;
                 } else if (lastPos - current < (step * -1)) {
                     lastPos = current;
-                    video.currentTime = video.currentTime + step;
+                    video.currentTime = video.currentTime + stepSize;
                 }
             });
         }
